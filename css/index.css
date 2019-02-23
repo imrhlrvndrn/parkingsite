@@ -191,6 +191,72 @@ nav .fa-bars{
 
 
 
+/* This is the footer with additional links to enhance the site navigation */
+footer{
+	height: auto;
+	width: 100%;
+	background: var(--skyblue);
+}
+
+footer *{
+    color: #fff !important;
+}
+
+
+#footer-container{
+	height: 40vh;
+	width: 100%;
+	padding: 4em 8em;
+	display: flex;
+}
+
+
+#footer-link-container{
+	display: flex;
+	width:50%;
+	justify-content: space-around;
+}
+
+
+.footer-links ul a{
+	display: block;
+	width: max-content !important;
+	margin-right: 80px;
+	margin-bottom: 20px;
+	font-size: 3vh;
+}
+
+.footer-links ul a:hover:not(.header-item){
+	border-bottom: 1px solid #333;
+	content: normal;
+}
+
+
+.footer-links ul a.header-item{
+	opacity: .4;
+	font-size: 4vh;
+	cursor: default;
+	margin-bottom: 20px;
+}
+
+
+
+#copyright{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--dblue);
+}
+
+/* The footer styles end here */
+
+
+
+
+
+
 
 
 
@@ -227,7 +293,43 @@ nav .fa-bars{
     }
 
 
-
+    footer{
+        height: auto;
+        width: 100%;
+    }
+    
+    
+    #footer-container{
+        height: auto;
+        width: 100%;
+        padding: 2em 2em;
+        display: flex;
+    }
+    
+    
+    #footer-link-container{
+        display: block;
+        width:50%;
+        justify-content: space-around;
+    }
+    
+    
+    .footer-links ul a{
+        font-size: 2vh;
+        display: block;
+        width: max-content !important;
+        margin-right: 80px;
+        margin-bottom: 20px
+    } 
+    
+    #copyright{
+        position: relative;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 
