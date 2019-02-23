@@ -293,8 +293,13 @@ footer *{
     }
 
     .feature > img{
-        width: 100px;
-        height: 100px;
+        width: 30%;
+        height: auto;
+    }
+
+    .feature > .featurecontent{
+        width: 70%;
+        height: 100%;
     }
 
 
