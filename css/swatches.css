@@ -1,0 +1,63 @@
+:root{
+	--fgreen: #25f273;
+	--fgreen2:#33ff99;
+	--dblue: #27233a;
+	--skyblue: #47d7ff;
+	--fblue:#8ff7ee;
+	--blue:#74b9ff;
+	--fred: #e74c3c;
+	--fpurple: #d8c0ec;
+	--tan: #D2B48C;
+	--pinkred:#DB5461;
+	--pink:#ff70a6;
+	--fuscia:#FD3F92;
+	--grey:#30343F;
+	--fyellow:#ffee58;
+	--magenta: #8a2380;
+	--forange:#FF7900;
+	--myellow:rgb(255,192,0);
+	--gold:#CFB53B;
+	--greenish-blue:#54e5b3;
+
+
+
+
+
+	/*fonts variables*/
+	--damion: 'Damion', cursive;;
+	--abril: 'Abril Fatface', cursive;
+	--lobster:'lobster',cursive;
+	--raleway:'raleway',sans-serif;
+	--fugaz: 'Fugaz One', cursive;
+	--sacramento:'Sacramento', cursive;
+	--oswald:'Oswald', sans-serif;
+	--rozhaone:'Rozha One', serif;
+	--merienda:'Merienda', cursive;
+	--ubuntu:'Ubuntu', sans-serif;
+	--comfortaa:'Comfortaa',cursive; /*Rounded Raleway*/
+	--cookie: 'Cookie', cursive;
+	--monoton: 'Monoton', cursive;
+	--parisienne: 'Parisienne', cursive;
+	--paytone: 'Paytone One', sans-serif;
+	--niconne: 'Niconne', cursive;
+	--megrim: 'Megrim', cursive; /*Triangular thin font*/
+	--lemon: 'Lemon', cursive;
+	--plaster: 'Plaster', cursive; /*Separate shapes font*/
+	--croissant: 'Croissant One', cursive;
+	--novaflat: 'Nova Flat', cursive;
+	--archivo: 'Archivo Black', sans-serif; /*use this font for the project of cooking Taicco's as a normal font*/
+	--bangers	: 'Bangers', cursive;
+	--ericaone: 'Erica One', cursive;
+	--montserrat: 'Montserrat', sans-serif; /*clean thin raleway like modern font*/
+	--josefin-sans:'Josefin Sans', sans-serif;
+	--ebfaramond:'EB Garamond', serif;
+	--playfair:'Playfair Display', serif;
+	--majormono: 'Major Mono Display', monospace; /*megrim type font but a level up !!!	*/
+}
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond:800" rel="stylesheet">  /*sexist heading font*/
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700i,900i" rel="stylesheet">  /*Canva font matching page heading font*/
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
