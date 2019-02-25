@@ -214,6 +214,10 @@ nav .fa-bars{
     width: 60%;
 }
 
+#booking-info .main-head{
+    font-size: 6vh;
+}
+
 #booking-form{
     width: 40%;
     padding: 3em 1em;
@@ -229,6 +233,7 @@ nav .fa-bars{
 }
 
 #booking-form .main-head{
+    font-size: 5vh;
     margin-bottom: 40px;
 }
 
