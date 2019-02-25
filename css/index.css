@@ -459,11 +459,6 @@ footer *{
         width: 100%;
     }
 
-    footer *{
-        color: #222;
-    }
-    
-    
     #footer-container{
         height: auto;
         width: 100%;
@@ -484,6 +479,7 @@ footer *{
         display: block;
         width: max-content !important;
         margin-right: 80px;
+        color: #222;
         margin-bottom: 20px
     } 
     
