@@ -21,6 +21,10 @@ img{
     object-position: center;
 }
 
+.main-head{
+    font-family: var(--playfair);
+}
+
 .light-heading{
     font-weight:300;
 }

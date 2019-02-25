@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Parking App</title>
+    <title>ParkingCo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
     <link rel="stylesheet" href="css/swatches.css">
     <link rel="shortcut icon" href="img/location.svg"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
 </head>
 <body>
@@ -40,7 +41,7 @@
 
     <!-- This section shows the features of the Web-App -->
     <section id="features">
-        <h1>Features</h1>
+        <h1 class="main-head">Features</h1>
         <div id="feature-wrapper">
             <div id="feature-content">
                 <div class="feature">
@@ -75,6 +76,34 @@
             <img src="https://images.pexels.com/photos/1231643/pexels-photo-1231643.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="luxury cars parked"/>
         </div>
     </section>
+
+
+
+    <!-- This section is the booking section where all the user data is stored and the desired vacant slot is booked -->
+    <section id="booking">
+
+        <div id="booking-info"></div>
+        <form action="" id="booking-form">
+            <input type="text" name="book-username" id="book-username" placeholder="Name">
+            <input type="tel" name="book-contact" id="book-contact" placeholder="Contact number">
+            <input type="number" name="book-hour" id="book-hour" placeholder="No.of hours">
+            <div id="book-gender-div">
+                <label for="book-gender-male"><img src="img/man.svg" alt="Male" style="width:60px;height:60px"></label>
+                <label for="book-gender-female"><img src="img/drive.svg" alt="Male" style="width:60px;height:60px"></label>
+                <input type="radio" name="book-gender-male" id="book-gender-male" value="Male">
+                <input type="radio" name="book-gender-female" id="book-gender-female" value="Female">
+            </div>
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+
 
 
 
