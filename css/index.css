@@ -429,6 +429,25 @@ footer *{
     }
 
 
+    #booking{
+        display: block;
+        height: auto;
+    }
+
+    #booking-info, #booking-form{
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
     footer{
         height: auto;
         width: 100%;
