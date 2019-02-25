@@ -12,6 +12,7 @@
     font-size: 3vh;
     text-decoration: none;
     color: #222;
+    caret-color: var(--skyblue);
 }
 
 img{
@@ -22,11 +23,17 @@ img{
 }
 
 .main-head{
+    text-align: center;
     font-family: var(--playfair);
+    font-size: 8vh;
 }
 
 .light-heading{
     font-weight:300;
+}
+
+input:focus{
+    outline:none;
 }
 
 /* Global styles end here */
@@ -195,6 +202,101 @@ nav .fa-bars{
 
 
 
+
+/* The styles for booking section starts here */
+
+#booking{
+    height: 100vh;
+    display: flex;
+}
+
+#booking-info{
+    width: 60%;
+}
+
+#booking-form{
+    width: 40%;
+    padding: 3em 1em;
+    background: var(--dblue);
+    display: flex;
+    flex-direction: column;
+}
+
+#booking-form *{
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+#booking-form .main-head{
+    margin-bottom: 40px;
+}
+
+#booking-form > input:not([type=button]){
+    border: none;
+    padding: .7em .2em;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+#booking-form > input[type=button]{
+    padding: .7em 1em;
+    color: #222;
+    background: var(--skyblue);
+    border:none;
+    cursor: pointer;
+}
+
+#book-gender-div{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .7s;
+}
+
+#book-gender-div > label:not(:first-child){
+    cursor: pointer;
+}
+
+#book-gender-div > label:first-child{
+    opacity: .3;
+}
+
+input[name="book-gender"]{
+    display: none;
+    transition: .7s;
+}
+
+input[name="book-gender"]:checked + img{
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+
+
+
+/* The styles for booking section ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* This is the footer with additional links to enhance the site navigation */
 footer{
 	height: auto;
@@ -255,6 +357,26 @@ footer *{
 }
 
 /* The footer styles end here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
