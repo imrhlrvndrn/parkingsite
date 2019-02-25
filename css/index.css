@@ -458,6 +458,10 @@ footer *{
         height: auto;
         width: 100%;
     }
+
+    footer *{
+        color: #222;
+    }
     
     
     #footer-container{
@@ -476,7 +480,7 @@ footer *{
     
     
     .footer-links ul a{
-        font-size: 2vh;
+        font-size: 2.5vh;
         display: block;
         width: max-content !important;
         margin-right: 80px;
