@@ -208,15 +208,40 @@ nav .fa-bars{
 #booking{
     height: 100vh;
     display: flex;
+    overflow: hidden;
 }
 
 #booking-info{
     width: 60%;
+    position: relative;
 }
 
 #booking-info .main-head{
     font-size: 6vh;
 }
+
+.circle-link{
+    border-radius: 50%;
+    background: var(--dblue);
+    width:400px;
+    height: 400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: #eee;
+    font-style: 60px;
+}
+
+
+
+
+
+
+
 
 #booking-form{
     position: relative;
@@ -345,7 +370,7 @@ footer *{
 }
 
 .footer-links ul a:hover:not(.header-item){
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #eee;
 	content: normal;
 }
 

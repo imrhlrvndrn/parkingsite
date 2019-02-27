@@ -83,13 +83,20 @@
     <!-- This section is the booking section where all the user data is stored and the desired vacant slot is booked -->
     <section id="booking">
 
+        <!-- This section is used to display all the pricing information about the parking slots -->
         <div id="booking-info">
             <h1 class="main-head">Select a parking slot for your car</h1>
+
+            <div class="circle-link">Read more</div>
         </div>
+
+        <!-- This is the right side form for booking the parking slot -->
         <form action="" id="booking-form">
             <h1 class="main-head">Arrange a slot.</h1>
             <input type="text" name="book-username" id="book-username" placeholder="Name">
             <input type="tel" name="book-contact" id="book-contact" placeholder="Contact number">
+
+            <!-- The below div is used to contain the two vector image radio button options -->
             <div id="book-gender-div">
                 <label id="gender-label">Gender:</label>
                 <label>
@@ -97,10 +104,9 @@
                 </label>
                 <label>
                         <input type="radio" name="book-gender" id="book-gender-female" value="Female"><img src="img/employee.svg" alt="Male" style="width:60px;height:60px;background:var(--fblue);border-radius:50%"></input>
-                </label>
-                
-                
+                </label> 
             </div>
+
             <input type="number" name="book-hour" id="book-hour" placeholder="No.of hours">
             <input id="form-submit" type="button" value="Submit">
         </form>
