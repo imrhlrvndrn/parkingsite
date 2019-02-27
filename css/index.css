@@ -219,6 +219,7 @@ nav .fa-bars{
 }
 
 #booking-form{
+    position: relative;
     width: 40%;
     padding: 3em 1em;
     background: var(--dblue);
@@ -279,6 +280,12 @@ input[name="book-gender"]:checked + img{
     border-radius: 50%;
 }
 
+#form-submit{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
 
 
 
