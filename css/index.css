@@ -471,6 +471,7 @@ footer *{
     footer{
         height: auto;
         width: 100%;
+        background : var(--dblue);
     }
 
     #footer-container{
@@ -502,6 +503,7 @@ footer *{
         width: 100%;
         height: auto;
         text-align: center;
+        background: var(--skyblue);
     }
 
 
