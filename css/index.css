@@ -212,6 +212,7 @@ nav .fa-bars{
 }
 
 #booking-info{
+    height: auto;
     width: 60%;
     position: relative;
 }
@@ -474,6 +475,7 @@ footer *{
 
     #booking-info, #booking-form{
         width: 100%;
+        height: auto;
     }
 
     #form-submit{
