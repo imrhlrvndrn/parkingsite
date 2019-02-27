@@ -313,7 +313,7 @@ input[name="book-gender"]:checked + img{
 footer{
 	height: auto;
 	width: 100%;
-	background: var(--skyblue);
+	background: var(--dblue);
 }
 
 footer *{
@@ -366,7 +366,7 @@ footer *{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--dblue);
+	background-color: var(--skyblue);
 }
 
 /* The footer styles end here */
