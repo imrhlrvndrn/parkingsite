@@ -32,8 +32,14 @@ img{
     font-weight:300;
 }
 
-input:focus{
+input:focus, button:focus{
     outline:none;
+    border: none;
+}
+
+button{
+    outline:none;
+    border: none;
 }
 
 /* Global styles end here */
@@ -209,6 +215,7 @@ nav .fa-bars{
     height: 100vh;
     display: flex;
     overflow: hidden;
+    position: relative;
 }
 
 #booking-info{
@@ -230,12 +237,27 @@ nav .fa-bars{
     justify-content: center;
     align-items: center;
     position: absolute;
-    top:100%;
+    top:50%;
     left:50%;
     transform: translate(-50%,-50%);
     color: #eee;
-    font-style: 60px;
+    cursor: pointer;
 }
+
+/* .price-animation{
+    animation: price 1s ease-in-out 1 forwards;
+}
+
+@keyframes price{
+    from{
+        width: 60%;
+        z-index: 0;
+    }to{
+        width: 100%;
+        z-index: 10;
+        right: 0;
+    }
+} */
 
 
 
