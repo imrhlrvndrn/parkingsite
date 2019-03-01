@@ -509,6 +509,11 @@ footer *{
         height: 100vh;
         width: 100%;
     }
+
+    .circle-link{
+        width: 250px;
+        height: 250px;
+    }
     
     #booking-form{
         width: 100%;
