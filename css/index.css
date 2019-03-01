@@ -507,7 +507,7 @@ footer *{
 
     #booking-info, #booking-form{
         width: 100%;
-        height: max-content;
+        height: auto;
     }
 
     #form-submit{
