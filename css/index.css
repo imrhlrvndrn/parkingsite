@@ -505,7 +505,12 @@ footer *{
         height: auto;
     }
 
-    #booking-info, #booking-form{
+    #booking-info {
+        height: 100vh;
+        width: 100%;
+    }
+    
+    #booking-form{
         width: 100%;
         height: auto;
     }
