@@ -2,6 +2,8 @@
 /* These are the global styles for every tag */
 :root{
     --montserrat: 'Montserrat', serif;
+    --primary-table: #2193B0;
+    --accent-table: #6DD5ED;
 }
 
 *{
@@ -279,7 +281,7 @@ nav .fa-bars{
 /* The styles for the pricing tables are defined below */
 #price_tables{
     display: none;
-    grid-template-columns: repeat(3,minmax(290px, 1fr));
+    grid-template-columns: repeat(3, minmax(290px, 1fr));
     grid-gap: 20px;
     margin-top: 50px;
 }
@@ -289,22 +291,28 @@ nav .fa-bars{
     flex-direction: column;
     text-align: center;
     text-transform: uppercase;
-    background-color: #eee;
+    background-image: linear-gradient(-45deg, var(--primary-table), var(--accent-table));
     padding: 30px 15px;
 }
 
 .table ul *{
-    color: #777;
+    color: #eee;
     margin-bottom: 20px;
 }
 
+.tablehead{
+    font-family:'Montserrat';
+    font-weight: 900;
+    color: var(--dblue) !important;
+}
+
 .dollar{
-    opacity:.2;
+    opacity:.5;
     font-size: 30px;
 }
 
 .monthly{
-    opacity: .2;
+    opacity: .5;
     font-size: 30px;
 }
 
