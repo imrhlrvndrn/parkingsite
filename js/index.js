@@ -7,6 +7,7 @@ const booking_info = document.getElementById('booking-info');
 const booking_form = document.getElementById('booking-form');
 const booking_info_h1 = document.querySelector('#booking-info-h1');
 const price_tables = document.getElementById('price_tables');
+const booking = document.getElementById('booking');
 
 
 
@@ -38,6 +39,7 @@ const pricing = () => {
     booking_form.style.display = 'none';
     circle_link_id.style.opacity = '0';
     price_tables.style.display = 'grid';
+    booking.style.background = 'var(--dblue)';
 
     setTimeout(function(){
         circle_link_id.style.display = 'none';      
@@ -56,6 +58,7 @@ const booking_close = () => {
     circle_link_id.style.display = 'block';
     circle_link_id.style.opacity = '1';
     price_tables.style.display = 'none';
+    booking.style.background = '#fff';
 }
 
 

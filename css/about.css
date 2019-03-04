@@ -20,11 +20,17 @@
 
 *::selection{
     background: var(--myellow);
+    color: #222;
+    opacity: 1;
 }
 
 h1,h2,h3,h4,h5,h6{
     /* font-family: var(--limelight); */
     font-weight: 900;
+}
+
+p{
+    font-family: var(--raleway);
 }
 
 img{
@@ -35,7 +41,7 @@ img{
 }
 
 .subtitle{
-    opacity: .5;
+    opacity: .7;
     font-size: 18px;
     margin: 20px 0;
 }
@@ -80,6 +86,12 @@ button{
     text-transform: capitalize;
     color: var(--skyblue);
     border: 2px solid var(--skyblue) !important;
+    transition: .7s;
+}
+
+.nudeButton:hover{
+    background: var(--skyblue);
+    border:none;
 }
 /* Global styles end here */
 
@@ -102,10 +114,11 @@ button{
     width: 50%;
     height: 100%;
     position: relative;
-    padding: 7em 2em 1em 7em;
+    padding: 7em 5em;
     /* background: url(https://images.pexels.com/photos/1449052/pexels-photo-1449052.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
     background-size: cover;
     background-position: center; */
+    /* background-image: linear-gradient(-45deg, var(--primary-table) 50%, var(--accent-table)); */
     background: var(--skyblue);
 }
 
@@ -116,7 +129,8 @@ button{
 #heroDescription{
     width: 50%;
     height: 100%;
-    padding: 7em 5em;
+    position: relative;
+    padding: 7em 2em 1em 7em;
     background: var(--dblue);
 }
 
@@ -125,14 +139,27 @@ button{
     margin-bottom: 30px;
 }
 
+#hero > .fa-chevron-left{
+    color: #eee !important;
+    opacity: 1;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1000;
+    font-size: 60px;
+    display: block;
+}
+
 #postDate{
     margin-bottom: 20px;
+    font-family: var(--raleway);
 }
 
 
 #main{
     height: auto;
-    padding: 3em 7em ;
+    padding: 1em 0em ;
+    display: none;
 }
 
 #main *{
@@ -140,16 +167,10 @@ button{
     margin-bottom: 20px;
 }
 
-
-#main > .bigHead{
-    border-left: 5px solid var(--skyblue);
-    padding-left: 10px;
-}
-
 #main > p{
     padding: 0 20px;
+    color: #999;
 }
-
 
 
 
