@@ -16,6 +16,7 @@
     color: #222;
     caret-color: var(--skyblue);
     list-style-type: none;
+    scroll-behavior: smooth;
 }
 
 img{

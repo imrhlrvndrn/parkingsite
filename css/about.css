@@ -16,6 +16,7 @@
     color: #eee;
     caret-color: var(--skyblue);
     list-style-type: none;
+    scroll-behavior: smooth;
 }
 
 *::selection{
