@@ -535,14 +535,28 @@ footer *{
     nav{
         padding: 0 .7em;
     }
-    
+    #hero{
+        background: #fff;
+    }
+
     #hero-wrapper{
         width:90%;
         display: block;
-    }
-    #hero-content{
         position: absolute;
-        left: 10%;
+        left: 7%;
+    }
+
+    #hero-wrapper *{
+        color: #222;
+    }
+    .preheading{
+        color: var(--skyblue) !important;
+    }
+    .primary{
+        background: var(--skyblue) !important;
+    }
+    .nudebtn{
+        border: 1px solid var(--skyblue);
     }
     #hero-wrapper img{
         display: none;
