@@ -540,6 +540,10 @@ footer *{
         width:90%;
         display: block;
     }
+    #hero-content{
+        position: absolute;
+        left: 10%;
+    }
     #hero-wrapper img{
         display: none;
     }
