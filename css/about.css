@@ -135,6 +135,11 @@ button{
     background: var(--dblue);
 }
 
+#main > a{
+    display: block;
+    margin-bottom: 20px;
+}
+
 #heroDescription *{
     color: #eee;
     margin-bottom: 30px;
