@@ -16,12 +16,12 @@
 			<div id="contact-form">
 				<h1>Just say hi!</h1>
 				<p>We're curious to hear from you!</p>
-				<form method="POST">
-					<input type="text" placeholder="Name *" class="nude-textbox" required="">
-					<input type="text" placeholder="Company (optional)" class="nude-textbox">		
-					<input type="email" placeholder="Email *" class="nude-textbox" required="">
-					<input type="text" placeholder="Phone number *" class="nude-textbox" required="">
-					<input type="text" placeholder="Message *" class="nude-textbox" required="">
+				<form method="POST" action="contact-handler.php">
+					<input name='name' type="text" placeholder="Name *" class="nude-textbox" required="">
+					<input name="company" type="text" placeholder="Company (optional)" class="nude-textbox">		
+					<input name="email" type="email" placeholder="Email *" class="nude-textbox" required="">
+					<input name="phone" type="text" placeholder="Phone number *" class="nude-textbox" required="">
+					<input name="message" type="text" placeholder="Message *" class="nude-textbox" required="">
 					<input type="submit" value="Send">
 				</form>
 			</div>
