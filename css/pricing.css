@@ -1,0 +1,52 @@
+/* These are the global styles for every tag */
+:root{
+    --montserrat: 'Montserrat', serif;
+    --primary-table: #2193B0;
+    --accent-table: #6DD5ED;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--montserrat);
+    font-size: 20px;
+    text-decoration: none;
+    color: #222;
+    caret-color: var(--skyblue);
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-head{
+    text-align: center;
+    font-family: var(--playfair);
+    font-size: 8vh;
+}
+
+.light-heading{
+    font-weight:300;
+}
+
+input:focus, button:focus{
+    outline:none;
+    border: none;
+}
+
+button{
+    outline:none;
+    border: none;
+}
+
+/* Global styles end here */
+
+
+
+

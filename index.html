@@ -22,6 +22,21 @@
         <a href="#" class="fas fa-bars"></a>
     </nav>
 
+
+    <!-- This is the hidden-menu that will display on-click of the fa-bars -->
+    <div id="hidden_menu">
+        <div id="hidden_menu_top">
+            <a href="index.html" onclick="">Parking</a>
+            <button class="fas fa-times close" onclick="close()"></button>
+        </div>
+        <ul id="hidden_menuitems">
+            <a href="index.html" onmouseover="hover(this)" onmouseout="rmhover(this)">home <i class="fas fa-arrow-right" style="font-size:8vh;"></i> </a>
+            <a href="html/about.html" onmouseover="hover(this)" onmouseout="rmhover(this)">about</a>
+            <a href="html/about.html" onmouseover="hover(this)" onmouseout="rmhover(this)">contact us</a>
+            <a href="html/about.html" onmouseover="hover(this)" onmouseout="rmhover(this)">pricing</a>
+        </ul>
+    </div>
+
     <!-- This is the main section that appears first on the screen whenever the site loads -->
     <section id="hero">
         <div id="hero-wrapper">

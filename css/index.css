@@ -73,6 +73,63 @@ nav .fa-bars{
     font-size: 5vh;
 }
 
+
+
+
+
+
+
+
+
+
+#hidden_menu{
+    height: 100vh;
+    width: 100%;
+    background-color: #eee;
+}
+
+#hidden_menu ul{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hidden_menu ul a{
+    text-transform: uppercase;
+    font-size: 10vh !important;
+    text-align: center;
+    opacity: 1;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+
+#hidden_menu ul a:hover{
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+
+
+
+
 /* navigation bar styles end here */
 
 
