@@ -89,51 +89,19 @@
             <h1 class="main-head" id="booking-info-h1">Select a parking slot for your car</h1>
 
 
-            <!-- This is the price tables for desktop version -->
-            <div id="price_tables">
-                <div class="table">
-                    <ul>
-                        <li class="main-head tablehead">PRO <span class="light-heading">PLAN</span></li>
-                        <li class="table_price">
-                            <span class="dollar">$</span>
-                            <span class="amount">24</span>
-                            <span class="monthly">/mo</span>
-                        </li>
-                        <li><span class="bold_li">book</span> anytime</li>
-                        <li class="button">
-                            <a href="#payment">buy</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="table">
-                    <ul>
-                        <li class="main-head tablehead">PRO <span class="light-heading">PLAN</span></li>
-                        <li class="table_price">
-                            <span class="dollar">$</span>
-                            <span class="amount">24</span>
-                            <span class="monthly">/mo</span>
-                        </li>
-                        <li><span class="bold_li">book</span> anytime</li>
-                        <li class="button">
-                            <a href="#payment">buy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
+            
 
             <!-- This is the pricing table link or button -->
-            <button id="circle-link"  class="circle-link" onclick='pricing()'>
+            <a id="circle-link"  class="circle-link" href="html/pricing.html">
                 <span style="font-weight:900; color:#eee">pricing</span>
-            </button>
+            </a>
         </div>
 
         <!-- This is the right side form for booking the parking slot -->
         <form action="" id="booking-form">
             <h1 class="main-head">Arrange a slot.</h1>
-            <input type="text" name="book-username" id="book-username" placeholder="Name">
-            <input type="tel" name="book-contact" id="book-contact" placeholder="Contact number">
+            <input type="text" name="book-username" id="book-username" placeholder="Full Name">
+            <input type="tel" name="book-contact" id="book-contact" placeholder="Contact number" maxlength="15">
 
             <!-- The below div is used to contain the two vector image radio button options -->
             <div id="book-gender-div">
