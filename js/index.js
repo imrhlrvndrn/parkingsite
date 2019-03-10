@@ -30,7 +30,7 @@ const close = () => {
     },500);
 }
 
-
+// The hover and rmhover functions are used for the hidden navigation menu
 const hover = (x) => {
     x.style.opacity = '1';
     let siblings = getSiblings(x);
