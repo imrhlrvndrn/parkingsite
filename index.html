@@ -19,21 +19,18 @@
         <a href="index.html">
             <img src="img/logo.svg" alt="logo" id="logo">
         </a>
-        <a href="#" class="fas fa-bars"></a>
+        <buttton class="fas fa-bars" onclick="hiddennav()"></buttton>
     </nav>
 
 
     <!-- This is the hidden-menu that will display on-click of the fa-bars -->
     <div id="hidden_menu">
-        <div id="hidden_menu_top">
-            <a href="index.html" onclick="">Parking</a>
-            <button class="fas fa-times close" onclick="close()"></button>
-        </div>
+        <button class="fas fa-times close" onclick="navclose()"></button>
         <ul id="hidden_menuitems">
-            <a href="index.html" onmouseover="hover(this)" onmouseout="rmhover(this)">home <i class="fas fa-arrow-right" style="font-size:8vh;"></i> </a>
-            <a href="html/about.html" onmouseover="hover(this)" onmouseout="rmhover(this)">about</a>
-            <a href="html/about.html" onmouseover="hover(this)" onmouseout="rmhover(this)">contact us</a>
-            <a href="html/about.html" onmouseover="hover(this)" onmouseout="rmhover(this)">pricing</a>
+            <a href="index.html" >home <i class="fas fa-arrow-right" style="font-size:8vh;"></i> </a>
+            <a href="html/about.html" >about</a>
+            <a href="html/about.html" >contact us</a>
+            <a href="html/about.html" >pricing</a>
         </ul>
     </div>
 
@@ -45,7 +42,8 @@
                 <h1>search and park <br> <span class="light-heading">all available parking.</span></h1>
                 <p class="subtitle">Pre-purchase the perfect spot and have a guaranteed space waiting for you.</p>
                 <div id="hero-buttons">
-                    <a href="#" class="primary">discover</a>
+                    <!-- link to the site for effective content -->
+                    <a target="_blank" href="https://www.justpark.com/" class="primary">discover</a>
                     <a href="#booking" class="nudebtn"  onclick="document.getElementById('çircle-link').click()">pricing</a>
                 </div>
             </div>
