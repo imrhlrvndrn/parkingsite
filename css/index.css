@@ -19,6 +19,15 @@
     scroll-behavior: smooth;
 }
 
+body{
+    position: relative;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
 img{
     width:100%;
     height: 100%;
@@ -34,6 +43,15 @@ img{
 
 .light-heading{
     font-weight:300;
+}
+
+.subHeading{
+    font-size: 25px;
+    opacity: .8;
+}
+
+.left{
+    text-align: left !important;
 }
 
 input:focus, button:focus{
@@ -523,9 +541,37 @@ footer *{
 /* The footer styles end here */
 
 
+/* The  terms and conditions styles start here */
+#terms{
+    padding: 40px;
+    position: absolute;
+    height: 90vh;
+    width: 70%;
+    left:50%;
+    transform: translate(-50%,0);
+    background: #eee;
+    overflow: scroll;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+}
 
+#terms h1{
+    margin: 50px 0 30px 0;
+}
 
+#terms p,ol >li{
+    width: 90%;
+    opacity: .7;
+    margin-bottom: 20px;
+}
 
+#terms ol li{
+    list-style-type: decimal;
+    margin-bottom: 1em;
+    margin-left: 50px;
+}
 
 
 

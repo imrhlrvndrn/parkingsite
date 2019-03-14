@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ParkingCo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+    <link rel="stylesheet" href="../css/swatches.css">
+    <meta name="theme-color" content="#a4e8f4"/>
+    <!-- <link rel="shortcut icon" href="img/location.svg"/> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+
+    <style>
+        
+/* These are the global styles for every tag */
+:root{
+    --montserrat: 'Montserrat', serif;
+    --primary-table: #2193B0;
+    --accent-table: #6DD5ED;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--montserrat);
+    font-size: 20px;
+    text-decoration: none;
+    color: #222;
+    caret-color: var(--skyblue);
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-head{
+    text-align: center;
+    font-family: var(--playfair);
+    font-size: 8vh;
+}
+
+.light-heading{
+    font-weight:300;
+}
+
+.subHeading{
+    font-size: 25px;
+    opacity: .8;
+}
+
+.left{
+    text-align: left !important;
+}
+
+input:focus, button:focus{
+    outline:none;
+    border: none;
+}
+
+button{
+    outline:none;
+    border: none;
+}
+
+.close{
+    background: transparent;
+    font-size: 50px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+/* Global styles end here */
+
+
+/* The code below is for the navigation bar */
+nav{
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+    align-items: center;
+    background: #fff;
+    z-index: 999;
+    transition: .7s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+
+nav #logo{
+    width: 70px;
+    height: 80%;
+    cursor: pointer;
+}
+
+nav .fa-bars{
+    font-size: 5vh;
+}
+
+
+
+
+
+
+
+
+
+
+#hidden_menu{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-color: #eee;
+    display: none;
+}
+
+#hidden_menu ul{
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hidden_menu ul a{
+    text-transform: uppercase;
+    font-size: 10vh !important;
+    text-align: center;
+    opacity: 1;
+    transition: 1s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+
+
+#hidden_menu ul a:hover{
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+
+#hidden_menu_top{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* navigation bar styles end here */
+
+
+
+
+
+
+/* Hero section styles start here */
+
+#hero{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(http://bit.ly/2UiFRX3);
+    background-size: cover;
+    background-position: top; 
+}
+
+#hero-wrapper{
+    display: flex;
+    position: absolute;
+    top:20%;
+    left: 20%;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: max-content;
+}
+
+#hero-content *{
+    color: #fff;
+}
+
+#hero-content{
+    width: 50%;
+    position: relative;
+}
+
+.preheading{
+    font-size:15px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#hero-content h1,span{
+    text-transform: capitalize;
+    font-size: 7vh;
+    margin-bottom: 20px;
+}
+
+.subtitle{
+    opacity: .6;
+    margin-bottom: 40px;
+}
+
+#hero-buttons{
+    display: inline;
+}
+
+.primary{
+    padding: .5em 1em;
+    background: #fff;
+    text-transform: uppercase;
+    color: #222 !important;
+    transition: .7s;
+}
+
+.nudebtn{
+    padding: .5em 1em;
+    margin-left: 10px;
+    text-transform: capitalize;
+    color: var(--skyblue);
+    border: 1px solid #fff;
+}
+
+#hero-wrapper img{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+/* Hero section styles end here */
+
+
+
+
+
+/* The feature section's styles start here */
+
+#features{
+    height: auto;
+    width: 100%;
+}
+
+#features > h1{
+    font-size: 8vh;
+    text-align: center;
+}
+
+#feature-wrapper{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    padding: 3em 5em;
+    /* background: #222; */
+}
+
+#feature-wrapper img{
+    height: 600px;
+    width: 40%;
+}
+
+#feature-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#feature-content img{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.feature-head{
+    margin-bottom: 10px;
+    font-size: 3.2vh !important;
+}
+
+.feature{
+    height: max-content;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.feature .subtitle{
+    font-size: 2.5vh;
+    margin-bottom: 0;
+    width:95%;
+}
+
+/* The feature section's styles end here */
+
+
+
+
+
+/* The styles for booking section starts here */
+
+#booking{
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+#booking-info{
+    height: auto;
+    width: 60%;
+    padding: 30px;
+    position: relative;
+}
+
+#booking-info i{
+    font-size:40px;
+    display: flex;
+    opacity: 0;
+    color: #eee;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+#booking-info .main-head{
+    font-size: 6vh;
+}
+
+.circle-link{
+    background: var(--dblue);
+    width:400px;
+    height: 400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: #eee;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* .circle-link:hover{
+    border-radius: 50%;
+} */
+
+/* .price-animation{
+    animation: price 1s ease-in-out 1 forwards;
+}
+
+@keyframes price{
+    from{
+        width: 60%;
+        z-index: 0;
+    }to{
+        width: 100%;
+        z-index: 10;
+        right: 0;
+    }
+} */
+
+
+
+
+
+
+
+#booking-form{
+    position: relative;
+    width: 40%;
+    padding: 3em 1em;
+    background: var(--dblue);
+    display: flex;
+    flex-direction: column;
+}
+
+#booking-form *{
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+#booking-form .main-head{
+    font-size: 5vh;
+    margin-bottom: 40px;
+}
+
+#booking-form > input:not([type=button]){
+    border: none;
+    padding: .7em .2em;
+    background: transparent;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+#booking-form > input[type=button]{
+    padding: .7em 1em;
+    color: #222;
+    background: var(--skyblue);
+    border:none;
+    cursor: pointer;
+}
+
+#book-gender-div{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .7s;
+}
+
+#book-gender-div > label:not(:first-child){
+    cursor: pointer;
+}
+
+#book-gender-div > label:first-child{
+    opacity: .3;
+}
+
+input[name="book-gender"]{
+    display: none;
+    transition: .7s;
+}
+
+input[name="book-gender"]:checked + img{
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+#form-submit{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+/* The styles for booking section ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This is the footer with additional links to enhance the site navigation */
+footer{
+	height: auto;
+	width: 100%;
+	background: var(--dblue);
+}
+
+footer *{
+    color: #fff !important;
+}
+
+
+#footer-container{
+	height: 40vh;
+	width: 100%;
+	padding: 4em 8em;
+	display: flex;
+}
+
+
+#footer-link-container{
+	display: flex;
+	width:50%;
+	justify-content: space-around;
+}
+
+
+.footer-links ul a{
+	display: block;
+	width: max-content !important;
+	margin-right: 80px;
+	margin-bottom: 20px;
+	font-size: 3vh;
+}
+
+.footer-links ul a:hover:not(.header-item){
+	border-bottom: 1px solid #eee;
+	content: normal;
+}
+
+
+.footer-links ul a.header-item{
+	opacity: .4;
+	font-size: 4vh;
+	cursor: default;
+	margin-bottom: 20px;
+}
+
+
+
+#copyright{
+    padding: .5em 0;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--skyblue);
+}
+
+/* The footer styles end here */
+
+
+/* The  terms and conditions styles start here */
+#terms{
+    padding: 40px;
+    position: absolute;
+    height: 90vh;
+    width: 70%;
+    left:50%;
+    transform: translate(-50%,0);
+    background: #eee;
+    overflow: scroll;
+    -webkit-transform: translate(-50%,0);
+    -moz-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    -o-transform: translate(-50%,0);
+}
+
+#terms h1{
+    margin: 50px 0 30px 0;
+}
+
+#terms p,ol >li{
+    width: 90%;
+    opacity: .7;
+    margin-bottom: 20px;
+}
+
+#terms ol li{
+    list-style-type: decimal;
+    margin-bottom: 1em;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* These are the styles for the mobile and tablet version of the site */
+@media screen and (max-width:1200px){
+    nav{
+        padding: 0 .7em;
+    }
+    #hero{
+        background: #fff;
+    }
+
+    #hero-wrapper{
+        width:90%;
+        display: block;
+        position: absolute;
+        left: 7%;
+    }
+
+    #hero-wrapper *{
+        color: #222;
+    }
+    .preheading{
+        color: var(--skyblue) !important;
+    }
+    .primary{
+        background: var(--skyblue) !important;
+    }
+    .nudebtn{
+        border: 1px solid var(--skyblue);
+    }
+    #hero-wrapper img{
+        display: none;
+    }
+    #hero-wrapper *{
+        width:100%;
+    }
+    #hero-buttons{
+        display: flex;
+    }
+
+
+    #feature-wrapper{
+        display: block;
+        padding: 1em 2em;
+    }
+    #feature-wrapper > img{
+        display: none;
+    }
+
+    .feature > img{
+        width: 30%;
+        height: auto;
+    }
+
+    .feature > .featurecontent{
+        width: 70%;
+        height: 100%;
+    }
+
+
+    #booking{
+        display: block;
+        height: auto;
+    }
+
+    #booking-info {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .circle-link{
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+    }
+    
+    #booking-form{
+        width: 100%;
+        height: auto;
+    }
+
+    #form-submit{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    footer{
+        height: auto;
+        width: 100%;
+        background : var(--dblue);
+    }
+
+    #footer-container{
+        height: auto;
+        width: 100%;
+        padding: 2em 2em;
+        display: flex;
+    }
+    
+    
+    #footer-link-container{
+        display: block;
+        width:50%;
+        justify-content: space-around;
+    }
+    
+    
+    .footer-links ul a{
+        font-size: 2.5vh;
+        display: block;
+        width: max-content !important;
+        margin-right: 80px;
+        color: #eee !important;
+        margin-bottom: 20px;
+    } 
+    
+    #copyright{
+        position: relative;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background: var(--skyblue);
+    }
+
+
+
+
+
+}
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <!-- Navigation bar is fixed on the top of the site at all time to ease the navigation of the site efficiently -->
+    <nav id="nav">
+        <a href="index.html">
+            <img src="../img/logo.svg" alt="logo" id="logo">
+        </a>
+        <buttton class="fas fa-bars" onclick="hiddennav()"></buttton>
+    </nav>
+
+
+    <!-- This is the hidden-menu that will display on-click of the fa-bars -->
+    <div id="hidden_menu">
+        <button class="fas fa-times close" onclick="navclose()"></button>
+        <ul id="hidden_menuitems">
+            <a href="index.html" >home <i class="fas fa-arrow-right" style="font-size:8vh;"></i> </a>
+            <a href="../html/about.html" >about</a>
+            <a href="../html/about.html" >contact us</a>
+            <a href="../html/about.html" >pricing</a>
+        </ul>
+    </div>
+
+    <!-- This is the main section that appears first on the screen whenever the site loads -->
+    <section id="hero">
+        <div id="hero-wrapper">
+            <div id="hero-content">
+                <span class="preheading">park happy</span>
+                <h1>search and park <br> <span class="light-heading">all available parking.</span></h1>
+                <p class="subtitle">Pre-purchase the perfect spot and have a guaranteed space waiting for you.</p>
+                <div id="hero-buttons">
+                    <!-- link to the site for effective content -->
+                    <a target="_blank" href="https://www.justpark.com/" class="primary">discover</a>
+                    <a href="#booking" class="nudebtn"  onclick="document.getElementById('çircle-link').click()">pricing</a>
+                </div>
+            </div>
+
+            <!-- <img src="img/hero_img.svg" alt="Car Parking"> -->
+
+        </div>
+    </section>
+
+    <!-- This section shows the features of the Web-App -->
+    <section id="features">
+        <h1 class="main-head">Features</h1>
+        <div id="feature-wrapper">
+            <div id="feature-content">
+                <div class="feature">
+                    <img src="../img/phone.svg" alt="OTP Authentication">
+                    <div class="featurecontent">
+                        <h1 class="feature-head">OTP <span class="light-heading feature-head">Authentication</span></h1>
+                        <p class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, nesciunt.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="../img/database.svg" alt="database">
+                    <div class="featurecontent">
+                        <h1 class="feature-head">Secure <span class="light-heading feature-head">Database</span> Connectivity</h1>
+                        <p class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, nesciunt.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="../img/booking.svg" alt="booking">
+                    <div class="featurecontent">
+                        <h1 class="feature-head">Faster <span class="light-heading feature-head">Booking</span></h1>
+                        <p class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, nesciunt.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="../img/cash.svg" alt="OTP Authentication">
+                    <div class="featurecontent">
+                        <h1 class="feature-head">Easy <span class="light-heading feature-head">Cash</span> Payment</h1>
+                        <p class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, nesciunt.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="https://images.pexels.com/photos/1231643/pexels-photo-1231643.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="luxury cars parked"/>
+        </div>
+    </section>
+
+
+
+    <!-- This section is the booking section where all the user data is stored and the desired vacant slot is booked -->
+    <section id="booking">
+
+        <!-- This section is used to display all the pricing information about the parking slots -->
+        <div id="booking-info">
+            <i class="fas fa-times"></i>
+            <h1 class="main-head" id="booking-info-h1">Select a parking slot for your car</h1>
+
+
+            
+
+            <!-- This is the pricing table link or button -->
+            <a id="circle-link"  class="circle-link" href="../html/pricing.html">
+                <span style="font-weight:900; color:#eee">pricing</span>
+            </a>
+        </div>
+
+        <!-- This is the right side form for booking the parking slot -->
+        <form action="" id="booking-form">
+            <h1 class="main-head">Arrange a slot.</h1>
+            <input type="text" name="book-username" id="book-username" placeholder="Full Name">
+            <input type="tel" name="book-contact" id="book-contact" placeholder="Contact number" maxlength="15">
+
+            <!-- The below div is used to contain the two vector image radio button options -->
+            <div id="book-gender-div">
+                <label id="gender-label">Gender:</label>
+                <label>
+                        <input type="radio" name="book-gender" id="book-gender-male" value="Male" checked><img src="../img/man.svg" alt="Male" style="width:60px;height:60px"></input>
+                </label>
+                <label>
+                        <input type="radio" name="book-gender" id="book-gender-female" value="Female"><img src="../img/employee.svg" alt="Male" style="width:60px;height:60px;background:var(--fblue);border-radius:50%"></input>
+                </label> 
+            </div>
+
+            <input type="number" name="book-hour" id="book-hour" placeholder="No.of hours">
+            <input id="form-submit" type="button" value="Submit">
+        </form>
+    </section>
+
+    
+
+
+
+
+
+
+    <div id="terms">
+        <i class="fas fa-times close"></i>
+        <div id="termsCondition">
+            <h1 class="light-heading">Terms and Conditions</h1>
+            <div id="subContent">
+                <h1 class="light-heading subHeading left">
+                    Website Terms & Conditions
+                </h1>
+                <p>
+                    If you are using JustPark’s mobile payment service, please note our terms relating to this service under our Mobile Payment Terms & Conditions. <br>
+                    If you are parking in a JustPark car park, please note our terms relating to this service under our Car Park Terms & Conditions
+                </p>
+
+
+                <h1 class="light-heading subHeading left">Introduction</h1> 
+                <ol type="1">
+                    <li>The website justpark.com ("the Site") is a parking space rental agency which allows you to book parking spaces anywhere in the world.</li>
+                    <li>The Site is operated by JustPark Limited ("we" or "us") and membership is open to any individual who chooses to register with the site.</li>
+                    <li>These terms will apply to anyone who views or uses the Site ("you").</li>
+                    <li>Whether you register or not you will be bound by these terms and conditions in full and you also agree to be bound by the terms of our Privacy policy which explains the use we are authorised to make of your personal information.</li>
+                    <li>These Terms and Conditions relate to your passive use of the Site, if you wish to book a parking space through the Site you will be bound by our Driver Agreement.</li>
+                    <li>If you are a parking space owner and you wish to rent your parking space with us you will be bound by our Parking Space Owner agreement.</li>
+                    <li>Please note that these terms and conditions may be amended from time to time. Notification of any changes will be made by posting new terms onto the Site. In continuing to use the Site you confirm that you accept the then current terms and conditions in full at the time you use the Site.</li>
+                </ol>
+
+
+                <h1 class="light-heading subHeading left">Registration</h1> 
+                <ol type="1">
+                    <li>Registration with the Site is currently free, however in order to become a registered user you will have to provide some basic personal information.</li>
+                    <li>You agree that all information supplied on registration is true and accurate and will be kept up to date at all times. We will use the information provided to us to contact you.</li>
+                    <li>You may not have more than one registration and we reserve the right at our discretion to delete or cancel the membership of any person who in our opinion possesses more than one registration at any time.</li>
+                    <li>You are not entitled to allow any other person to use your registration. You may not impersonate any other person in any registration whether or not that other person is a user of the Site.</li>
+                    <li>On receipt of an email by you to us cancelling your registration then we will terminate your registration.</li>
+                    <li>We reserve the right to terminate your registration immediately without notice if in our opinion you have breached these terms.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- This is the footer section where all the links are redefined and it also contains some additional site links -->
+    <footer>
+        <div id="footer-container">
+            <div id="footer-link-container">
+                <div class="footer-links">
+                    <ul>
+                        <a href="#footer-link-container" class="header-item">About</a>
+                        <a href="html/contact.html">Contact us</a>
+                        <a href="html/about.html">About us</a>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <ul>
+                        <a href="#footer-link-container" class="header-item">Policies</a>
+                        <a href="#terms">Terms of use</a>
+                        <a href="#cancellation">Cancellation policy</a>
+                    </ul>
+                </div>
+
+                <div class="footer-links" id="social">
+                    <ul>
+                        <a href="#footer-link-container" class="header-item">Social</a>
+                        <a target="_blank" href="https://www.facebook.com/rahul.ravindran.7355">Facebook</a>
+                        <a target="_blank" href="https://www.instagram.com/introvert_160299">Instagram</a>
+                        <a href="#footer-link-container">LinkedIn</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <p id="copyright">ParkingCo &copy 2019. All Rights Reserved.</p>
+    </footer>
+
+
+
+
+
+
+
+    <!-- <script src="js/index.js"></script> -->
+    <script>
+        // variable for nav code
+        let prevScrollpos = window.pageYOffset;
+
+        // // variables for the pricing charts
+        const closeIcon = document.querySelectorAll(".close");
+        const hidden_menu = document.getElementById("#hidden_menu");
+        const nav = document.querySelector('nav');
+
+
+
+
+        // This code is activated whenever there is a scroll event triggered in the window
+        window.onscroll = function() {
+            // This code makes the nav appear and disappear on the screen
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav").style.top = "0";
+            } else {
+                document.getElementById("nav").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+            // nav animation ends here
+        }
+
+
+        const navclose = () => {
+            hidden_menu.style.opacity = "0";
+            
+
+            setTimeout(function(){
+                hidden_menu.style.display = "none";
+            },1000);
+        }
+
+        // The hover and rmhover functions are used for the hidden navigation menu
+        // const hover = (x) => {
+        //     x.style.opacity = '1';
+        //     let siblings = getSiblings(x);
+        //     siblings.style.opacity = '.3';
+        // }
+
+        // const rmhover = (x) => {
+        //     x.style.opacity = '.5';
+        // }
+
+        const hiddennav = () => {
+            const hidden_menu = document.getElementById("#hidden_menu");
+            nav.style.display = "none";
+            document.getElementById("#hidden_menu").style.display = 'block';
+        }
+
+        // All the eventListeners are addded here
+
+
+    </script>
+</body>
+</html>
