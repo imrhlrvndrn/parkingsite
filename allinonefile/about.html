@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About | ParkingCo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="../css/about.css"> -->
+    <link rel="stylesheet" href="../css/swatches.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <style>
+        /* These are the global styles for every tag */
+:root{
+    --montserrat: 'Montserrat', serif;
+    /* --limelight: 'Limelight', cursive; */
+    --primary-table: #2193B0;
+    --accent-table: #6DD5ED;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--montserrat);
+    font-size: 20px;
+    text-decoration: none;
+    color: #eee;
+    caret-color: var(--skyblue);
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+*::selection{
+    background: var(--myellow);
+    color: #222;
+    opacity: 1;
+}
+
+h1,h2,h3,h4,h5,h6{
+    /* font-family: var(--limelight); */
+    font-weight: 900;
+}
+
+p{
+    font-family: var(--raleway);
+}
+
+img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.subtitle{
+    opacity: .7;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.main-head{
+    text-align: center;
+    font-family: var(--playfair);
+    font-size: 8vh;
+}
+
+.light-heading{
+    font-weight:300;
+}
+
+input:focus, button:focus{
+    outline:none;
+    border: none;
+}
+
+button{
+    outline:none;
+    border: none;
+}
+
+.bigHead{
+    font-size: 70px;
+    line-height: 1em;
+    margin-bottom: 15px;
+}
+
+.medHead{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.nudeButton{
+    padding: .7em 1.5em;
+    margin-top: 20px !important;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    text-transform: capitalize;
+    color: var(--skyblue);
+    border: 2px solid var(--skyblue) !important;
+    transition: .7s;
+}
+
+.nudeButton:hover{
+    background: var(--skyblue);
+    border:none;
+}
+/* Global styles end here */
+
+
+
+
+
+#hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: var(--skyblue);
+}
+
+#hero *{
+    transition: .7s;
+}
+
+#heroImage{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding: 7em 5em;
+    /* background: url(https://images.pexels.com/photos/1449052/pexels-photo-1449052.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+    background-size: cover;
+    background-position: center; */
+    /* background-image: linear-gradient(-45deg, var(--primary-table) 50%, var(--accent-table)); */
+    background: var(--skyblue);
+}
+
+#heroImage *{
+    color:#222;
+}
+
+#heroDescription{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    padding: 7em 2em 1em 7em;
+    background: var(--dblue);
+}
+
+#main > a{
+    display: block;
+    margin-bottom: 20px;
+}
+
+#heroDescription *{
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+#hero > .fa-chevron-left{
+    color: #eee !important;
+    opacity: 1;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1000;
+    font-size: 60px;
+    display: block;
+}
+
+#postDate{
+    margin-bottom: 20px;
+    font-family: var(--raleway);
+}
+
+
+#main{
+    height: auto;
+    padding: 1em 0em ;
+    display: none;
+}
+
+#main *{
+    color: #222;
+    margin-bottom: 20px;
+}
+
+#main > p{
+    padding: 0 20px;
+    color: #999;
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- This is the hero section -->
+    <section id="hero">
+        <i class="fas fa-chevron-left" onclick="heroDescription_reset"></i>
+        <div id="heroDescription">
+            <div id="postDate">Mar 3, 2019</div>
+            <h4 class="medHead" id="heroDescriptionh1">Story of<br>ParkingCo</h4>
+            <p class="subtitle" id="heroDescriptionp">Hazzle free parking is a dream for every car owner. We introduce ParkingCo to you, here you can book parking slots in advance and this will save both your time and fuel for traversing through filled parking lots. One of the biggest challenge we face is lack of efficient parking management...</p>
+            <button class="nudeButton" id="heroButton" onclick="readmore()">Read more</button>
+            <section id="main">
+                <p>Today, we can witness the flood of cars out there on the roads, and needless to say, it is increasing at an unstoppable pace. Due to the increment in the density of cars, the problem of parking remains still a big problem.
+                Now since the people are unable to locate the parking spaces most of the time, they tend to park their vehicle in almost every corner they find. This not only results in traffic chaos but most of the time hampers the route of the other vehicles, thus making them unable to get their vehicles out from the particular location.</p>
+                <p>
+                    In such a scenario, the parking finder mobile app development can be said as the major rescue. With the help of these mobile apps users can locate the nearby parking place and can reserve them too, thus can park in a very convenient manner.
+                    Well, what else the parking finder app can do? It will assign you the drivers as well; in case the parking place is located at quite a distance from your destination. The driver will park your car at the location you selected for parking. At the time of your departure, you will have the car right in front of you. Interesting isn’t.
+                    Now since the aforementioned concept had become the need of the hour, thus ample of business and startups are plunging into parking finder app development. So, here keep reading the post for identifying the basic attributes, technologies and the cost required for developing a top-notch parking finder mobile app.</p>
+                </p>
+        
+                <p>User Panel:
+        
+                    Register: This is the basic section of the app. Users can log in with the help of social network or email account credentials.
+                    
+                    Allow system to track vehicle location: With the help of the GPS, the users can track the location of their vehicles and can estimate the distance between their parking and the current location.
+                    
+                    Search pickup location: The users can check the pick-up location of their vehicle so as to collect it.
+                    
+                    Enter estimated arrival and departure time: Users can set the arrival and the departure time. According to that, the users can get the optimized parking places within the stipulated time frame.
+                    
+                    Schedule booking: Users can schedule the booking as well. They can book the parking place as per their own convenience.
+                    
+                    Make payments: Users can make the payment to drivers as per the Kms traveled while parking the car and the parking charges.
+                    
+                    Manage parking history: The users can manage the parking history as well. They can check the locations at which their vehicles were parked frequently.
+                    
+                    Provide ratings and reviews: According to the services delivered and the locations of the parking places, users can post the reviews and ratings.
+                    
+                    parking-finder-app
+                    
+                     
+                    
+                    Admin Panel:
+                    
+                    Reports: All the reports and statistics related to the number of requests captured, preferred location, parking charges, driver information etc are managed by the admin.
+                    
+                    User and Driver management: All the users and drivers that are attuned to the app are managed and monitored by the admin.
+                    
+                    Add/ Reject drivers: Under this section, the admin can add or reject the drivers depending on the number of parking request aligned.
+                    
+                    Manage earnings: All the in-app purchases, subscription packages, and the online transactions are managed by the admin.
+                    
+                    Booking manager: All the parking places that are attuned to the app and their parking costs are managed and tracked by the admin.
+                    
+                    Offer management: All the offers, customerloyalty programs, and discounts are managed and governed by the admin.
+                    
+                    Reservation management: Under this section, all the reserved parking locations are tracked by the admin.
+                    
+                    Add new locations: Depending on the user’s requirements, the admin can add new parking locations so as to provide more convenient options.
+                    
+                    Driver Panel:parking-finder-app
+                    
+                    Register: Similar to the user’s panel, the drivers can also log-in with the aid of email account or the social network credentials.
+                    
+                    Add personal details and ID proof: The drivers can update their basic information along the scanned copy of the ID proof, in order to prove authenticity.
+                    
+                    Accept/reject user booking request: Depending on the number of parking request and the location of parking the drivers can accept or reject the request from the users.
+                    
+                    Contact customers through the app: Under this feature, the users can communicate with the drivers so as to verify the location of the car and can update them about their location as well, so that the driver may drop the car as per their desired location.
+                    
+                    Collect payment from customers: All the payments made by the users for the parking and for dropping and picking up the car to and from the location can be accepted by the drivers. All the information related to the payments is redirected to the admin.
+                    
+                    View ratings and review: The drivers can view the rating and reviews assigned by the user according to the services and quality delivered.</p>
+                
+        
+                <a target="_blank" href="https://www.octalsoftware.com/blog/parking-finder-app-development" style="color:var(--skyblue);">The link for the source of this information *About parking*</a>
+                <a target="_blank" href="https://www.ite.org/technical-resources/topics/trip-and-parking-generation/parking-occupancy-data-collection/" style="color:var(--skyblue);">The link for required data collection management*</a>
+                <a target="_blank" href="https://www.researchgate.net/publication/303842610_IoT_based_Smart_Parking_System" style="color:var(--skyblue);">Parking: IoT based parking system link</a>
+            </section>
+        </div>
+        <div id="heroImage">
+            <h1 class="bigHead">About<br>ParkingCo</h1>
+            <p class="subtitle">We make the life of our users easier by allowing them to book parking slots efficiently</p>
+        </div>
+    </section>
+
+    
+
+
+    <!-- <script src="../js/about.js"></script> -->
+
+    <script>
+        
+const hero = document.getElementById('hero');
+const readButton = document.getElementById('heroButton');
+const heroDescription = document.getElementById('heroDescription');
+const heroDescriptionh1 = document.getElementById('heroDescriptionh1');
+const heroDescriptionp = document.getElementById('heroDescriptionp');
+const main = document.getElementById('main');
+const heroImage = document.getElementById('heroImage');
+
+
+// console.log('hey am working!!');
+
+
+const readmore = () => {
+    heroDescription.style.width = '100%';
+    // heroDescription.style.direction = 'rtl';
+    heroDescriptionh1.classList.remove('medHead');
+    heroDescriptionh1.classList.add('bigHead');
+    heroDescriptionh1.style.borderLeft = '5px solid var(--skyblue)';
+    heroDescriptionh1.style.paddingLeft = '20px';
+    heroDescription.style.height = 'auto';
+    heroDescriptionp.style.opacity = '0';
+    readButton.style.opacity = '0';
+    hero.style.height = 'auto';
+    main.style.display = 'block';
+    heroImage.style.width = '0%';
+    heroImage.style.display = 'none';
+
+
+    setTimeout(function(){
+        heroDescriptionp.style.display = 'none';
+        readButton.style.display = 'none';
+    },500);
+}
+
+
+
+const heroDescription_reset = () => {
+    heroDescription.style.width = '100%';
+    // heroDescription.style.direction = 'rtl';
+    heroDescriptionh1.classList.remove('medHead');
+    heroDescriptionh1.classList.add('bigHead');
+    heroDescriptionh1.style.borderLeft = '5px solid var(--skyblue)';
+    heroDescriptionh1.style.paddingLeft = '20px';
+    heroDescription.style.height = 'auto';
+    heroDescriptionp.style.opacity = '0';
+    readButton.style.opacity = '0';
+    hero.style.height = 'auto';
+    main.style.display = 'block';
+    heroImage.style.width = '0%';
+    heroImage.style.display = 'none';
+
+
+    setTimeout(function(){
+        heroDescriptionp.style.display = 'none';
+        readButton.style.display = 'none';
+    },500);
+}
+
+    </script>
+</body>
+</html>
