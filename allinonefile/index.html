@@ -23,6 +23,7 @@
 }
 
 *{
+    z-index: 0;
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -33,6 +34,10 @@
     caret-color: var(--skyblue);
     list-style-type: none;
     scroll-behavior: smooth;
+}
+
+section{
+    background: #fff;
 }
 
 body{
@@ -132,8 +137,15 @@ nav .fa-bars{
     height: 100vh;
     width: 100%;
     position: fixed;
+    z-index: -99;
     background-color: #eee;
-    display: none;
+    display: block;
+    transition: .7s;
+}
+
+#hidden_menu:target{
+    z-index: 100000;
+    animation: fadeIn .7s 1 forwards;
 }
 
 #hidden_menu ul{
@@ -168,13 +180,39 @@ nav .fa-bars{
 
 #hidden_menu ul a:hover{
     transform-style: preserve-3d;
-    transform: rotateY(180deg);
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
+    animation: tada 1s 1 forwards;
 }
 
+
+@keyframes tada {
+  from {
+    font-weight: 300;
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    font-weight: 900;
+    transform: scale3d(1, 1, 1);
+  }
+}
 
 #hidden_menu_top{
     width: 100%;
@@ -183,6 +221,15 @@ nav .fa-bars{
     justify-content: space-between;
 }
 
+
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
 
 
 
@@ -295,8 +342,9 @@ nav .fa-bars{
 }
 
 #feature-wrapper img{
-    height: 600px;
+    height: 650px;
     width: 40%;
+    border-radius: 50% 1%;
 }
 
 #feature-content{
@@ -621,6 +669,16 @@ footer *{
     nav{
         padding: 0 .7em;
     }
+
+    #hidden_menu ul{
+        width:100%;
+    }
+
+    #hidden_menu ul a{
+        font-size: 35px !important;
+        margin-bottom: 30px;
+    }
+
     #hero{
         background: #fff;
     }
@@ -768,15 +826,16 @@ footer *{
         <a href="index.html">
             <img src="../img/logo.svg" alt="logo" id="logo">
         </a>
-        <buttton class="fas fa-bars" onclick="hiddennav()"></buttton>
+        <!-- <button class="fas fa-bars" onclick="hiddennav()"></button> -->
+        <a href="#hidden_menu" class="fas fa-bars"></a>
     </nav>
 
 
     <!-- This is the hidden-menu that will display on-click of the fa-bars -->
     <div id="hidden_menu">
-        <button class="fas fa-times close" onclick="navclose()"></button>
+        <a href="#1" class="fas fa-times close"></a>
         <ul id="hidden_menuitems">
-            <a href="index.html" >home <i class="fas fa-arrow-right" style="font-size:8vh;"></i> </a>
+            <a href="index.html" >home</i> </a>
             <a href="../html/about.html" >about</a>
             <a href="../html/about.html" >contact us</a>
             <a href="../html/about.html" >pricing</a>
@@ -788,7 +847,7 @@ footer *{
         <div id="hero-wrapper">
             <div id="hero-content">
                 <span class="preheading">park happy</span>
-                <h1>search and park <br> <span class="light-heading">all available parking.</span></h1>
+                <h1 class="left">search and park <br> <span class="light-heading">all available parking.</span></h1>
                 <p class="subtitle">Pre-purchase the perfect spot and have a guaranteed space waiting for you.</p>
                 <div id="hero-buttons">
                     <!-- link to the site for effective content -->
@@ -810,28 +869,28 @@ footer *{
                 <div class="feature">
                     <img src="../img/phone.svg" alt="OTP Authentication">
                     <div class="featurecontent">
-                        <h1 class="feature-head">OTP <span class="light-heading feature-head">Authentication</span></h1>
+                        <h1 class="feature-head left">OTP <span class="light-heading feature-head">Authentication</span></h1>
                         <p class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, nesciunt.</p>
                     </div>
                 </div>
                 <div class="feature">
                     <img src="../img/database.svg" alt="database">
                     <div class="featurecontent">
-                        <h1 class="feature-head">Secure <span class="light-heading feature-head">Database</span> Connectivity</h1>
+                        <h1 class="feature-head left">Secure <span class="light-heading feature-head">Database</span> Connectivity</h1>
                         <p class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, nesciunt.</p>
                     </div>
                 </div>
                 <div class="feature">
                     <img src="../img/booking.svg" alt="booking">
                     <div class="featurecontent">
-                        <h1 class="feature-head">Faster <span class="light-heading feature-head">Booking</span></h1>
+                        <h1 class="feature-head left">Faster <span class="light-heading feature-head">Booking</span></h1>
                         <p class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, nesciunt.</p>
                     </div>
                 </div>
                 <div class="feature">
                     <img src="../img/cash.svg" alt="OTP Authentication">
                     <div class="featurecontent">
-                        <h1 class="feature-head">Easy <span class="light-heading feature-head">Cash</span> Payment</h1>
+                        <h1 class="feature-head left">Easy <span class="light-heading feature-head">Cash</span> Payment</h1>
                         <p class="subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, nesciunt.</p>
                     </div>
                 </div>
@@ -863,7 +922,8 @@ footer *{
         <form action="" id="booking-form">
             <h1 class="main-head">Arrange a slot.</h1>
             <input type="text" name="book-username" id="book-username" placeholder="Full Name">
-            <input type="tel" name="book-contact" id="book-contact" placeholder="Contact number" maxlength="15">
+            <input type="tel" name="book-contact" id="book-contact" placeholder="Contact number" maxlength="10" required>
+            <input type="email" name="book-email" id="book-email" placeholder="E-mail">
 
             <!-- The below div is used to contain the two vector image radio button options -->
             <div id="book-gender-div">
@@ -876,7 +936,7 @@ footer *{
                 </label> 
             </div>
 
-            <input type="number" name="book-hour" id="book-hour" placeholder="No.of hours">
+            <input type="number" name="book-hour" id="book-hour" placeholder="No.of hours" required>
             <input id="form-submit" type="button" value="Submit">
         </form>
     </section>
@@ -1000,7 +1060,7 @@ footer *{
 
 
         const navclose = () => {
-            hidden_menu.style.opacity = "0";
+            hidden_menu.style.zIndex = "-9999 !important";
             
 
             setTimeout(function(){
@@ -1018,12 +1078,6 @@ footer *{
         // const rmhover = (x) => {
         //     x.style.opacity = '.5';
         // }
-
-        const hiddennav = () => {
-            const hidden_menu = document.getElementById("#hidden_menu");
-            nav.style.display = "none";
-            document.getElementById("#hidden_menu").style.display = 'block';
-        }
 
         // All the eventListeners are addded here
 
