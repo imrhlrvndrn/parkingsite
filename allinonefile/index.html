@@ -98,7 +98,7 @@ button{
 
 /* The code below is for the navigation bar */
 nav{
-    position: fixed;
+    position: absolute;
     height: 90px;
     width: 100%;
     display: flex;
@@ -136,11 +136,11 @@ nav .fa-bars{
 #hidden_menu{
     height: 100vh;
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: -99;
     background-color: #eee;
     display: block;
-    transition: .7s;
+    transition: .7s;    
 }
 
 #hidden_menu:target{
@@ -606,20 +606,42 @@ footer *{
 
 
 /* The  terms and conditions styles start here */
+
 #terms{
-    display: none;
+    border-radius: 10px;
+    display: block;
     padding: 40px;
-    position: absolute;
+    position: fixed;
     height: 90vh;
-    width: 70%;
+    width: 600px;
+    top:50%;
     left:50%;
-    transform: translate(-50%,0);
+    z-index: 999;
+    transform: translate(-50%,-50%) scale3d(0,0,0);
     background: #eee;
+    overflow: hidden;
+    -webkit-transform: translate(-50%,-50%) scale3d(0,0,0);
+    -moz-transform: translate(-50%,-50%) scale3d(0,0,0);
+    -ms-transform: translate(-50%,-50%) scale3d(0,0,0);
+    -o-transform: translate(-50%,-50%) scale3d(0,0,0);
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+    box-shadow: 10px 10px 20px #222;
+}
+
+#terms:target{
+    transform: translate(-50%,-50%) scale3d(1,1,1);
+    -webkit-transform: translate(-50%,-50%) scale3d(1,1,1) ;
+    -moz-transform: translate(-50%,-50%) scale3d(1,1,1);
+    -ms-transform: translate(-50%,-50%) scale3d(1,1,1);
+    -o-transform: translate(-50%,-50%) scale3d(1,1,1);
+}
+
+#terms:hover{
     overflow: scroll;
-    -webkit-transform: translate(-50%,0);
-    -moz-transform: translate(-50%,0);
-    -ms-transform: translate(-50%,0);
-    -o-transform: translate(-50%,0);
 }
 
 #terms h1{
@@ -637,7 +659,6 @@ footer *{
     margin-bottom: 1em;
     margin-left: 50px;
 }
-
 
 
 
@@ -821,7 +842,7 @@ footer *{
 
 </head>
 <body>
-    <!-- Navigation bar is fixed on the top of the site at all time to ease the navigation of the site efficiently -->
+    <!-- Navigation bar is absolute on the top of the site at all time to ease the navigation of the site efficiently -->
     <nav id="nav">
         <a href="index.html">
             <img src="../img/logo.svg" alt="logo" id="logo">
@@ -947,43 +968,39 @@ footer *{
 
 
 
-
     <div id="terms">
-        <i class="fas fa-times close"></i>
-        <div id="termsCondition">
-            <h1 class="light-heading">Terms and Conditions</h1>
-            <div id="subContent">
-                <h1 class="light-heading subHeading left">
-                    Website Terms & Conditions
-                </h1>
-                <p>
-                    If you are using JustPark’s mobile payment service, please note our terms relating to this service under our Mobile Payment Terms & Conditions. <br>
-                    If you are parking in a JustPark car park, please note our terms relating to this service under our Car Park Terms & Conditions
-                </p>
+        <h1 class="light-heading">Terms and Conditions</h1>
+        <div id="subContent">
+            <h1 class="light-heading subHeading left">
+                Website Terms & Conditions
+            </h1>
+            <p>
+                If you are using JustPark’s mobile payment service, please note our terms relating to this service under our Mobile Payment Terms & Conditions. <br>
+                If you are parking in a JustPark car park, please note our terms relating to this service under our Car Park Terms & Conditions
+            </p>
 
 
-                <h1 class="light-heading subHeading left">Introduction</h1> 
-                <ol type="1">
-                    <li>The website justpark.com ("the Site") is a parking space rental agency which allows you to book parking spaces anywhere in the world.</li>
-                    <li>The Site is operated by JustPark Limited ("we" or "us") and membership is open to any individual who chooses to register with the site.</li>
-                    <li>These terms will apply to anyone who views or uses the Site ("you").</li>
-                    <li>Whether you register or not you will be bound by these terms and conditions in full and you also agree to be bound by the terms of our Privacy policy which explains the use we are authorised to make of your personal information.</li>
-                    <li>These Terms and Conditions relate to your passive use of the Site, if you wish to book a parking space through the Site you will be bound by our Driver Agreement.</li>
-                    <li>If you are a parking space owner and you wish to rent your parking space with us you will be bound by our Parking Space Owner agreement.</li>
-                    <li>Please note that these terms and conditions may be amended from time to time. Notification of any changes will be made by posting new terms onto the Site. In continuing to use the Site you confirm that you accept the then current terms and conditions in full at the time you use the Site.</li>
-                </ol>
+            <h1 class="light-heading subHeading left">Introduction</h1> 
+            <ol type="1">
+                <li>The website justpark.com ("the Site") is a parking space rental agency which allows you to book parking spaces anywhere in the world.</li>
+                <li>The Site is operated by JustPark Limited ("we" or "us") and membership is open to any individual who chooses to register with the site.</li>
+                <li>These terms will apply to anyone who views or uses the Site ("you").</li>
+                <li>Whether you register or not you will be bound by these terms and conditions in full and you also agree to be bound by the terms of our Privacy policy which explains the use we are authorised to make of your personal information.</li>
+                <li>These Terms and Conditions relate to your passive use of the Site, if you wish to book a parking space through the Site you will be bound by our Driver Agreement.</li>
+                <li>If you are a parking space owner and you wish to rent your parking space with us you will be bound by our Parking Space Owner agreement.</li>
+                <li>Please note that these terms and conditions may be amended from time to time. Notification of any changes will be made by posting new terms onto the Site. In continuing to use the Site you confirm that you accept the then current terms and conditions in full at the time you use the Site.</li>
+            </ol>
 
 
-                <h1 class="light-heading subHeading left">Registration</h1> 
-                <ol type="1">
-                    <li>Registration with the Site is currently free, however in order to become a registered user you will have to provide some basic personal information.</li>
-                    <li>You agree that all information supplied on registration is true and accurate and will be kept up to date at all times. We will use the information provided to us to contact you.</li>
-                    <li>You may not have more than one registration and we reserve the right at our discretion to delete or cancel the membership of any person who in our opinion possesses more than one registration at any time.</li>
-                    <li>You are not entitled to allow any other person to use your registration. You may not impersonate any other person in any registration whether or not that other person is a user of the Site.</li>
-                    <li>On receipt of an email by you to us cancelling your registration then we will terminate your registration.</li>
-                    <li>We reserve the right to terminate your registration immediately without notice if in our opinion you have breached these terms.</li>
-                </ol>
-            </div>
+            <h1 class="light-heading subHeading left">Registration</h1> 
+            <ol type="1">
+                <li>Registration with the Site is currently free, however in order to become a registered user you will have to provide some basic personal information.</li>
+                <li>You agree that all information supplied on registration is true and accurate and will be kept up to date at all times. We will use the information provided to us to contact you.</li>
+                <li>You may not have more than one registration and we reserve the right at our discretion to delete or cancel the membership of any person who in our opinion possesses more than one registration at any time.</li>
+                <li>You are not entitled to allow any other person to use your registration. You may not impersonate any other person in any registration whether or not that other person is a user of the Site.</li>
+                <li>On receipt of an email by you to us cancelling your registration then we will terminate your registration.</li>
+                <li>We reserve the right to terminate your registration immediately without notice if in our opinion you have breached these terms.</li>
+            </ol>
         </div>
     </div>
 

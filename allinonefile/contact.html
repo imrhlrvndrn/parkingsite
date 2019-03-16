@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- <link rel="stylesheet" type="text/css" href="..\css\contact.css"> -->
+	<link rel="stylesheet" type="text/css" href="..\css\swatches.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <title>Contact us</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-decoration: none;
+            list-style-type: none;
+            box-sizing: border-box;
+            font-family: var(--raleway);
+            scroll-behavior: smooth;
+        }
+
+        h1{
+            font-family: var(--ebfaramond);
+            letter-spacing: 2px;
+        }
+
+        a{
+            color: var(--greenish-blue) !important;
+        }
+
+        .nude-textbox{
+            border: none;
+            border-bottom: 1px solid var(--greenish-blue);
+            padding: 0 0 10px 0;
+            font-size: 20px;
+        }
+
+        #contact-div{
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            background: var(--greenish-blue);
+        }
+
+        #contact-form-container{
+            display: flex;
+            position: absolute;
+            width:80%;
+            height: 80%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        #contact-form{
+            width: 50%;
+            padding: 3em;
+            background: #f6f6f6;
+        }
+
+        #contact-form h1{
+            font-size: 60px;
+        }
+
+        #contact-form p{
+            font-size: 20px;
+            opacity: .6;
+        }
+
+        #contact-form form{
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 2;
+            grid-template-rows: 4;
+            grid-auto-rows: 45px;
+            grid-row-gap: 30px;
+            grid-column-gap: 50px;
+        }
+
+        #contact-form form input{
+            background: transparent;
+            caret-color: var(--greenish-blue);
+        }
+
+        #contact-form form input:nth-child(1){
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        #contact-form form input:nth-child(2){
+            grid-row: 1;
+            grid-column: 2;
+        }
+
+        #contact-form form input:nth-child(3){
+            grid-row: 2;
+            grid-column: 1;
+        }
+
+        #contact-form form input:nth-child(4){
+            grid-row: 2;
+            grid-column: 2;
+        }
+
+        #contact-form form input:nth-child(5){
+            grid-row: 3;
+            grid-column: 1/3;
+        }
+
+        #contact-form form input[type=submit]{
+            grid-row: 4;
+            grid-column: 2;
+            border: none;
+            background: var(--greenish-blue);
+            width:50%;
+            position: relative;
+            cursor: pointer;
+            left: 50%;
+            font-size: 20px;
+        }
+
+        #contact-form form input:focus{
+            outline: none;
+        }
+
+        #contact-details{
+            width: 50%;
+            background:var(--dblue);
+            padding: 3em;
+        }
+
+        #contact-details *{
+            color: #eee;
+        }
+
+        #contact-details h1{
+            font-size: 60px;
+        }
+
+        #where{
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+            width: 120px;
+            height: 140px;
+            border-radius: 5px;
+            background: #eee;
+            transition: .7s;
+            box-shadow: 0 10px 10px 0 #000;
+        }
+
+        #where:hover{
+            box-shadow: 0 0px 10px 0 #000;	
+        }
+
+        #where i{
+            margin: 20px 0 10px 0;
+            font-size: 50px;
+            color: var(--dblue);
+            text-align: center;
+            width: 100%;
+        }
+
+        #where p{
+            text-align: center;
+            color: var(--dblue);
+            font-size: 20px;
+        }
+
+        .close-btn{
+            position: absolute;
+            top:50px;
+            right: 50px;
+            color: #eee;
+            background: transparent;
+            border: 1.5px solid #eee;
+            padding: 1em;
+        }
+
+        .social{
+            display: flex;
+            justify-content: space-around;
+            width: 200px;
+            margin-top: 20px;
+            font-size: 25px;
+        }
+
+        .social .fab{
+            color: #fff !important;
+            transition: .5s;
+            cursor: pointer;
+        }
+
+        .social .fab:hover{
+            color: var(--greenish-blue) !important; 
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+	<div id="contact-div">
+		<div id="contact-form-container" style="padding: 2em;">
+			<div id="contact-form">
+				<h1>Just say hi!</h1>
+				<p>We're curious to hear from you!</p>
+				<form method="POST" action="contact-handler.php">
+					<input name='name' type="text" placeholder="Name *" class="nude-textbox" required="">
+					<input name="company" type="text" placeholder="Company (optional)" class="nude-textbox">		
+					<input name="email" type="email" placeholder="Email *" class="nude-textbox" required="">
+					<input name="phone" type="text" placeholder="Phone number *" class="nude-textbox" required="">
+					<input name="message" type="text" placeholder="Message *" class="nude-textbox" required="">
+					<input type="submit" value="Send">
+				</form>
+			</div>
+
+
+			<span class="close-btn">CLOSE</span>
+
+
+
+			<div id="contact-details">
+				<h1>Contact Information</h1>
+				<p>
+					<br>Call us:  <a href="tel:7738959327">7738959327</a> <br><br>
+					Mail us: <a href="mailto:rahulr1116@gmail.com">rahulr1116@gmail.com</a>
+				</p>
+				<div class="social">
+					<a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook"></a>
+					<a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></a>
+					<a href="https://www.linkedin.com" target="_blank" class="fab fa-linkedin"></a>
+					<a href="https://www.twitter.com/" target="_blank" class="fab fa-twitter"></a>
+				</div>
+				<a target="_blank" href="http://bit.ly/2UkRlZZ" id="where">
+					<i class="far fa-building"></i>
+					<p>Thane <br> West</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
